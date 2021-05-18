@@ -27,6 +27,7 @@ function getEmoji() {
   if (hour > 15 & hour <= 18) emoji = "🌤️"
   if (hour > 18 & hour <= 21) emoji = "🌄"
   if (hour > 21 & hour <= 24) emoji = "🌙"
+  console.log('☀️')
   return emoji
 }
 
