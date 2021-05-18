@@ -48,33 +48,33 @@ export default function index() {
     <>
       <h1 className="time" onClick={() => setShow(prev => !prev)}>{time} {emoji}</h1>
       <div className="mt-5 card-container">
-        <Card onClick={() => router.push('https://media.codadash.com')}>
+        <Card onClick={() => router.push('https://media.codadash.com')} onAuxClick={()=> window.open('https://media.codadash.com', '_blank')}>
           <Image src='/image/jellyfin.png' layout='fill' quality={10} />
         </Card>
-        <Card onClick={() => router.push('https://pass.codadash.com')}>
+        <Card onClick={() => router.push('https://pass.codadash.com')} onAuxClick={()=> window.open('https://pass.codadash.com', '_blank')}>
           <Image src='/image/bitwarden.png' layout='fill' quality={10} />
         </Card>
-        <Card onClick={() => router.push('https://file.codadash.com')}>
+        <Card onClick={() => router.push('https://file.codadash.com')} onAuxClick={()=> window.open('https://file.codadash.com', '_blank')}>
           <Image src='/image/nextcloud.png' layout='fill' quality={10} />
         </Card>
         {show && 
           <>
-            <Card onClick={() => router.push('https://movie.codadash.com')}>
+            <Card onClick={() => router.push('https://movie.codadash.com')} onAuxClick={()=> window.open('https://movie.codadash.com', '_blank')}>
               <Image src='/image/radarr.png' layout='fill' quality={10} />
             </Card>
-            <Card onClick={() => router.push('https://show.codadash.com')}>
+            <Card onClick={() => router.push('https://show.codadash.com')} onAuxClick={()=> window.open('https://show.codadash.com', '_blank')}>
               <Image src='/image/sonarr.png' layout='fill' quality={10} />
             </Card>
-            <Card onClick={() => router.push('http://192.168.1.34:8085')}>
+            <Card onClick={() => router.push('http://192.168.1.34:8085')} onAuxClick={()=> window.open('http://192.168.1.34:8085', '_blank')}>
               <Image src='/image/qbit.png' layout='fill' quality={10} />
             </Card>
-            <Card onClick={() => router.push('https://jackett.codadash.com')}>
+            <Card onClick={() => router.push('https://jackett.codadash.com')} onAuxClick={()=> window.open('https://jackett.codadash.com', '_blank')}>
               <Image src='/image/jackett.png' layout='fill' quality={10} />
             </Card>
-            <Card onClick={() => router.push('https://proxy.codadash.com')}>
+            <Card onClick={() => router.push('https://proxy.codadash.com')} onAuxClick={()=> window.open('https://proxy.codadash.com', '_blank')}>
               <Image src='/image/proxy.png' layout='fill' quality={10} />
             </Card>
-            <Link href="/table">
+            <Link href='/table'>
               <Card>
                 <Image src='/image/table.png' layout='fill' quality={10} />
               </Card>
