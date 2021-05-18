@@ -26,9 +26,9 @@ export default function table({ tables }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   await connectDB()
   const tables = await Mongo.find()
   if (tables.length === 0) return { props: { } }
-  return { props: { tables: jparse(tables) }, revalidate: 1 }
+  return { props: { tables: jparse(tables) } }
 }
