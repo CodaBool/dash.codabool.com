@@ -9,7 +9,7 @@ const NUMBER_OF_IMAGES = 23
 export default function App({ Component, pageProps }) {
   return (
     <div className="page-background" style={{
-      backgroundColor: 'grey', 
+      backgroundColor: '#303030', 
       backgroundImage: `url(/image/${Math.floor(Math.random() * Math.floor(NUMBER_OF_IMAGES)) + 1}.jpg)`
     }}>
       <Head>
