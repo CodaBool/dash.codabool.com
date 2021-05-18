@@ -30,5 +30,5 @@ export async function getStaticProps() {
   await connectDB()
   const tables = await Mongo.find()
   if (tables.length === 0) return { props: { } }
-  return { props: { tables: jparse(tables) }, revalidate: 10 }
+  return { props: { tables: jparse(tables) }, revalidate: 1 }
 }
