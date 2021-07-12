@@ -74,6 +74,9 @@ export default function index() {
             <Card onClick={() => router.push('https://proxy.codadash.com')}>
               <Image src='/image/proxy.png' layout='fill' quality={10} />
             </Card>
+            <Card onClick={() => router.push('https://meal.codadash.com')}>
+              <Image src='/image/mealie.png' layout='fill' quality={10} />
+            </Card>
             <Link href="/table">
               <Card>
                 <Image src='/image/table.png' layout='fill' quality={10} />
