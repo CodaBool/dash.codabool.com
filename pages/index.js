@@ -57,6 +57,9 @@ export default function index() {
         <Card onClick={() => router.push('https://file.codadash.com')} onAuxClick={()=> window.open('https://file.codadash.com', '_blank')}>
           <Image src='/image/nextcloud.png' layout='fill' quality={10} />
         </Card>
+        <Card onClick={() => router.push('https://meal.codadash.com')} onAuxClick={()=> window.open('https://meal.codadash.com', '_blank')}>
+          <Image src='/image/mealie.png' layout='fill' quality={10} />
+        </Card>
         {show && 
           <>
             <Card onClick={() => router.push('https://movie.codadash.com')} onAuxClick={()=> window.open('https://movie.codadash.com', '_blank')}>
@@ -73,9 +76,6 @@ export default function index() {
             </Card>
             <Card onClick={() => router.push('https://proxy.codadash.com')} onAuxClick={()=> window.open('https://proxy.codadash.com', '_blank')}>
               <Image src='/image/proxy.png' layout='fill' quality={10} />
-            </Card>
-            <Card onClick={() => router.push('https://meal.codadash.com')}>
-              <Image src='/image/mealie.png' layout='fill' quality={10} />
             </Card>
             <Link href="/table">
               <Card>
