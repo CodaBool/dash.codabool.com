@@ -68,7 +68,7 @@ export default function index() {
             <Card onClick={() => router.push('https://show.codadash.com')} onAuxClick={()=> window.open('https://show.codadash.com', '_blank')}>
               <Image src='/image/sonarr.png' layout='fill' quality={10} />
             </Card>
-            <Card onClick={() => router.push('http://192.168.0.211:8085')} onAuxClick={()=> window.open('http://192.168.0.211:8085', '_blank')}>
+            <Card onClick={() => router.push('http://192.168.0.127:8085')} onAuxClick={()=> window.open('http://192.168.0.127:8085', '_blank')}>
               <Image src='/image/qbit.png' layout='fill' quality={10} />
             </Card>
             <Card onClick={() => router.push('https://jackett.codadash.com')} onAuxClick={()=> window.open('https://jackett.codadash.com', '_blank')}>
