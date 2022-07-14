@@ -4,11 +4,11 @@ import Tab from '../components/Tab'
 import Button from 'react-bootstrap/Button'
 
 // server
-import Mongo from '../models'
-import { connectDB, jparse } from '../util/db'
+// import Mongo from '../models'
+// import { connectDB, jparse } from '../util/db'
 
 export default function table({ tables }) {
-
+  return <h1>hi</h1>
   return (
     <>
       <Link href="/">
@@ -26,9 +26,9 @@ export default function table({ tables }) {
   )
 }
 
-export async function getServerSideProps() {
-  await connectDB()
-  const tables = await Mongo.find()
-  if (tables.length === 0) return { props: { } }
-  return { props: { tables: jparse(tables) } }
-}
+// export async function getServerSideProps() {
+//   await connectDB()
+//   const tables = await Mongo.find()
+//   if (tables.length === 0) return { props: { } }
+//   return { props: { tables: jparse(tables) } }
+// }
