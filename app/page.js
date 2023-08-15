@@ -1,7 +1,9 @@
+export const revalidate = 0
+
 import Link from 'next/link'
 import Image from 'next/image'
 
-const now = new Date()
+const now = new Date(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
 let hour = now.getHours()
 
 const minutes = (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
