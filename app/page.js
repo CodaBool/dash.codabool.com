@@ -30,7 +30,12 @@ const sites = {
   'https://show.codadash.com': '/sonarr.png',
   'https://qbit.codadash.com': '/qbit.png',
   'https://jackett.codadash.com': '/jackett.png',
-  'https://proxy.codadash.com': '/proxy.png'
+  'https://proxy.codadash.com': '/proxy.png',
+  'http://192.168.0.25:7070': '/rss-custom.png',
+  'https://rss2.codadash.com': '/rss.png',
+  'https://bin.codadash.com': '/bin.png',
+  'https://meal.codadash.com': '/meal.png',
+  'https://doc.codadash.com': '/doc.png',
 }
 
 export default function Main() {
