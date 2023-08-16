@@ -1,4 +1,4 @@
-export const revalidate = 0
+export const revalidate = 3600 // seconds until page revalidation
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -34,7 +34,7 @@ const sites = {
   'https://jackett.codadash.com': '/jackett.png',
   'https://proxy.codadash.com': '/proxy.png',
   'http://192.168.0.25:7070': '/rss-custom.png',
-  'https://rss2.codadash.com': '/rss.png',
+  'https://rss.codadash.com': '/rss.png',
   'https://bin.codadash.com': '/bin.png',
   'https://meal.codadash.com': '/meal.png',
   'https://doc.codadash.com': '/doc.png',
@@ -54,7 +54,7 @@ export default function Main() {
         }}
       />
       <h1 className="time">
-        {time} {emoji}
+        {emoji}
       </h1>
       <div className="flex-container">
         {Object.entries(sites).map(obj => (
