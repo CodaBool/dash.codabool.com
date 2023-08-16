@@ -4,16 +4,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const now = new Date(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
-let hour = now.getHours()
+// let hour = now.getHours()
 
-const minutes = (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
-if (hour > 12) {
-  hour = hour - 12
-}
-const time = hour + ":" + minutes + " "
+// const minutes = (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
+// if (hour > 12) {
+//   hour = hour - 12
+// }
+// const time = hour + ":" + minutes + " "
 
 // 🌅 ☀️ ⛅ 🌤️ 🌇 🌄 🌕 🌑 ⛅ 🌙 🌗
-hour = now.getHours()
+const hour = now.getHours()
 let emoji = ''
 if (hour <= 3) emoji = "🌑"
 if (hour > 3 & hour <= 6) emoji = "🌗"
@@ -25,19 +25,19 @@ if (hour > 18 & hour <= 21) emoji = "🌄"
 if (hour > 21 & hour <= 24) emoji = "🌙"
 
 const sites = {
-  'https://media.codadash.com': '/jellyfin.png',
-  'https://pass.codadash.com': '/bitwarden.png',
-  'https://sync.codadash.com': '/sync.png',
-  'https://movie.codadash.com': '/radarr.png',
-  'https://show.codadash.com': '/sonarr.png',
-  'https://qbit.codadash.com': '/qbit.png',
-  'https://jackett.codadash.com': '/jackett.png',
-  'https://proxy.codadash.com': '/proxy.png',
-  'http://192.168.0.25:7070': '/rss-custom.png',
-  'https://rss.codadash.com': '/rss.png',
-  'https://bin.codadash.com': '/bin.png',
-  'https://meal.codadash.com': '/meal.png',
-  'https://doc.codadash.com': '/doc.png',
+  'https://media.codadash.com': '/jellyfin.svg',
+  'https://pass.codadash.com': '/bitwarden.svg',
+  'https://sync.codadash.com': '/sync.svg',
+  'https://movie.codadash.com': '/radarr.svg',
+  'https://show.codadash.com': '/sonarr.svg',
+  'https://qbit.codadash.com': '/qbit.svg',
+  'https://jackett.codadash.com': '/jackett.svg',
+  'https://proxy.codadash.com': '/proxy.svg',
+  'http://192.168.0.25:7070': '/rss-custom.svg',
+  'https://rss.codadash.com': '/rss.svg',
+  'https://bin.codadash.com': '/bin.svg',
+  'https://meal.codadash.com': '/meal.svg',
+  'https://doc.codadash.com': '/doc.svg',
 }
 
 export default function Main() {
