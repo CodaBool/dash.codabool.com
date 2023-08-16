@@ -60,6 +60,7 @@ export default function Main() {
         {Object.entries(sites).map(obj => (
           <div className="flex-item" key={obj[0]}>
             <Link href={obj[0]}>
+              <div className="circle"></div>
               <Image
                 src={obj[1]}
                 alt={obj[1]}
