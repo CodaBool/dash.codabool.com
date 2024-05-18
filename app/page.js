@@ -37,6 +37,7 @@ const sites = {
   'https://rpg.codabool.com': '/d20.webp',
   'https://plex.codabool.com': '/plex.webp',
   'https://photos.codabool.com': '/immich.webp',
+  'https://money.codabool.com': '/money.webp',
 }
 
 export default function Main() {
