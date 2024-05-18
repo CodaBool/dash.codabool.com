@@ -25,17 +25,18 @@ if (hour > 18 & hour <= 21) emoji = "🌄"
 if (hour > 21 & hour <= 24) emoji = "🌙"
 
 const sites = {
-  'https://media.codadash.com': '/jellyfin.svg',
-  'https://sync.codadash.com': '/sync.svg',
-  'https://movie.codadash.com': '/radarr.svg',
-  'https://show.codadash.com': '/sonarr.svg',
-  'https://qbit.codadash.com': '/qbit.svg',
-  'https://jackett.codadash.com': '/jackett.svg',
-  'https://proxy.codadash.com': '/proxy.svg',
-  'https://rss.codadash.com': '/rss.svg',
-  'https://bin.codadash.com': '/bin.svg',
-  'https://meal.codadash.com': '/meal.svg',
-  'https://doc.codadash.com': '/doc.svg',
+  'https://media.codabool.com': '/jellyfin.svg',
+  'https://sync.codabool.com': '/sync.svg',
+  'https://movies.codabool.com': '/radarr.svg',
+  'https://tv.codabool.com': '/sonarr.svg',
+  'https://qbit.codabool.com': '/qbit.svg',
+  'https://index.codabool.com': '/jackett.svg',
+  'https://rss.codabool.com': '/rss.svg',
+  'https://bin.codabool.com': '/bin.svg',
+  'https://doc.codabool.com': '/doc.svg',
+  'https://rpg.codabool.com': '/d20.webp',
+  'https://plex.codabool.com': '/plex.webp',
+  'https://photos.codabool.com': '/immich.webp',
 }
 
 export default function Main() {
