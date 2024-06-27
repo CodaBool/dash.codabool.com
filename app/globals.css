@@ -1,6 +1,8 @@
-html {
-    /* background-color: black; */
+html,
+body {
+    background-color: background-color: rgba(0, 0, 0, 0);
 }
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -57,15 +59,18 @@ html {
         left: 20px;
         top: 20px;
     }
+
     .flex-item {
         width: 120px;
         height: 120px;
         margin: 0.75em;
     }
+
     .flex-container {
         gap: 5px;
     }
 }
+
 @media (max-width: 544px) {
     .circle {
         width: 60px;
@@ -73,6 +78,7 @@ html {
         left: 10px;
         top: 10px;
     }
+
     .flex-item {
         width: 80px;
         height: 80px;
