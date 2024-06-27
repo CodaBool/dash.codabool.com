@@ -1,5 +1,6 @@
 html,
 body {
+    /* added only to support dark-reader not replacing the css */
     background-color: rgba(0, 0, 0, 0);
 }
 
