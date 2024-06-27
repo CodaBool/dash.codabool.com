@@ -3,7 +3,7 @@ export const revalidate = 3600 // seconds until page revalidation
 import Link from 'next/link'
 import Image from 'next/image'
 
-const now = new Date(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
+const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }))
 // let hour = now.getHours()
 
 // const minutes = (now.getMinutes() < 10 ? '0' : '') + now.getMinutes()
@@ -25,15 +25,17 @@ if (hour > 18 & hour <= 21) emoji = "🌄"
 if (hour > 21 & hour <= 24) emoji = "🌙"
 
 const sites = {
-  'https://media.codabool.com': '/jellyfin.svg',
-  'https://sync.codabool.com': '/sync.svg',
-  'https://movies.codabool.com': '/radarr.svg',
-  'https://tv.codabool.com': '/sonarr.svg',
-  'https://qbit.codabool.com': '/qbit.svg',
-  'https://index.codabool.com': '/jackett.svg',
-  'https://rss.codabool.com': '/rss.svg',
-  'https://bin.codabool.com': '/bin.svg',
-  'https://doc.codabool.com': '/doc.svg',
+  'https://media.codabool.com': '/jellyfin.webp',
+  'https://sync.codabool.com': '/sync.webp',
+  'https://movies.codabool.com': '/radarr.webp',
+  'https://tv.codabool.com': '/sonarr.webp',
+  'https://qbit.codabool.com': '/qbit.webp',
+  'https://index.codabool.com': '/jackett.webp',
+  'https://lancer.codabool.com': '/lancer.webp',
+  'https://ssh.codabool.com': '/ssh.webp',
+  'https://rss.codabool.com': '/rss.webp',
+  'https://bin.codabool.com': '/bin.webp',
+  'https://doc.codabool.com': '/doc.webp',
   'https://rpg.codabool.com': '/d20.webp',
   'https://plex.codabool.com': '/plex.webp',
   'https://photos.codabool.com': '/immich.webp',
@@ -44,7 +46,7 @@ export default function Main() {
   return (
     <>
       <Image
-        src='/background.jpg'
+        src='/background.webp'
         alt="background"
         sizes="100vw"
         fill
@@ -68,7 +70,7 @@ export default function Main() {
                 sizes="(min-width: 960px) 250px, (max-width: 960px) 150px, (max-width: 544px) 100px"
                 fill
                 style={{ objectFit: 'cover' }}
-                />
+              />
             </Link>
           </div>
         ))}

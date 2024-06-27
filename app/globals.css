@@ -1,81 +1,81 @@
 html {
-  background-color: black;
+    /* background-color: black; */
 }
 .flex-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .circle {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  left: 20px;
-  top: 20px;
-  background-color: white;
-  border-radius: 50%;
-  z-index: -1;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 20px;
+    top: 20px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
 }
 
 .flex-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: rgba(146, 135, 135, 0.15);
-  width: 160px;
-  height: 160px;
-  margin: 1em;
-  cursor: pointer;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(146, 135, 135, 0.15);
+    width: 160px;
+    height: 160px;
+    margin: 1em;
+    cursor: pointer;
+    position: relative;
 }
 
 .flex-item:hover {
-  background-color: rgba(146, 135, 135, 0.4);
+    background-color: rgba(146, 135, 135, 0.4);
 }
 
 .time {
-  color: rgba(255, 255, 255, 1);
-  margin: 80px auto 0 auto;
-  text-align: center;
-  width: 300px;
-  font-size: 4em;
-  text-shadow: 0 0 5px rgb(0, 0, 0);
-  opacity: 0.7;
-  cursor: default;
+    color: rgba(255, 255, 255, 1);
+    margin: 80px auto 0 auto;
+    text-align: center;
+    width: 300px;
+    font-size: 4em;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    opacity: 0.7;
+    cursor: default;
 }
 
 @media (max-width: 960px) {
-  .circle {
-    width: 80px;
-    height: 80px;
-    left: 20px;
-    top: 20px;
-  }
-  .flex-item {
-    width: 120px;
-    height: 120px;
-    margin: .75em;
-  }
-  .flex-container {
-    gap: 5px;
-  }
+    .circle {
+        width: 80px;
+        height: 80px;
+        left: 20px;
+        top: 20px;
+    }
+    .flex-item {
+        width: 120px;
+        height: 120px;
+        margin: 0.75em;
+    }
+    .flex-container {
+        gap: 5px;
+    }
 }
 @media (max-width: 544px) {
-  .circle {
-    width: 60px;
-    height: 60px;
-    left: 10px;
-    top: 10px;
-  }
-  .flex-item {
-    width: 80px;
-    height: 80px;
-    margin: .5em;
-  }
+    .circle {
+        width: 60px;
+        height: 60px;
+        left: 10px;
+        top: 10px;
+    }
+    .flex-item {
+        width: 80px;
+        height: 80px;
+        margin: 0.5em;
+    }
 }
