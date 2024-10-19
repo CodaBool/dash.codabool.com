@@ -43,7 +43,7 @@ export default function Main({ searchParams }) {
       'http://192.168.0.25:7075': '/doc.webp',
       'http://192.168.0.25:30000': '/d20.webp',
       'http://192.168.0.25:32400': '/plex.webp',
-      'http://192.168.0.25:2283': '/immich.webp',
+      'http://192.168.0.25:2283/albums': '/immich.webp',
       'https://money.codabool.com': '/money.webp',
       'http://192.168.0.25:3001': '/uptime.webp',
     }
