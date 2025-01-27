@@ -46,6 +46,7 @@ export default function Main({ searchParams }) {
       'http://192.168.0.25:2283/albums': '/immich.webp',
       'https://money.codabool.com': '/money.webp',
       'http://192.168.0.25:3001': '/uptime.webp',
+      'http://192.168.0.25:8082': '/tools.webp',
     }
   } else {
     sites = {
@@ -65,6 +66,7 @@ export default function Main({ searchParams }) {
       'https://photos.codabool.com': '/immich.webp',
       'https://money.codabool.com': '/money.webp',
       'https://uptime.codabool.com': '/uptime.webp',
+      'https://tools.codabool.com': '/tools.webp',
     }
   }
 
