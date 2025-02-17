@@ -24,8 +24,8 @@ if (hour > 15 & hour <= 18) emoji = "🌤️"
 if (hour > 18 & hour <= 21) emoji = "🌄"
 if (hour > 21 & hour <= 24) emoji = "🌙"
 
-export default function Main({ searchParams }) {
-  const { l } = searchParams
+export default async function Main({ searchParams }) {
+  const { l } = await searchParams
   const useLocalIp = typeof l === "string"
   let sites
   if (useLocalIp) {
@@ -99,19 +99,17 @@ export default function Main({ searchParams }) {
         {Object.entries(sites).map(obj => (
           <div className="flex-item" key={obj[0]}>
             <Link href={obj[0]}>
-              <div className="circle"></div>
               <Image
                 src={obj[1]}
                 alt={obj[1]}
                 quality={20}
                 priority
-                sizes="(min-width: 960px) 250px, (max-width: 960px) 150px, (max-width: 544px) 100px"
+                sizes="(min-width: 960px) 150px, (max-width: 960px) 100px, (max-width: 544px) 60px"
                 fill
                 style={{ objectFit: 'cover' }}
               />
               <span style={{ display: "none" }}>{obj[0]}</span>
             </Link>
-
           </div>
         ))}
       </div>
