@@ -104,7 +104,7 @@ export default async function Main({ searchParams }) {
                 alt={obj[1]}
                 quality={20}
                 priority
-                sizes="(min-width: 960px) 150px, (max-width: 960px) 100px, (max-width: 544px) 60px"
+                sizes="(min-width: 960px) 150px, (max-width: 960px) 120px, (max-width: 544px) 90px"
                 fill
                 style={{ objectFit: 'cover' }}
               />
