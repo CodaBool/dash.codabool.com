@@ -52,7 +52,7 @@ export default async function Main({ searchParams }) {
       // 'https://money.codabool.com': '/money.webp',
       'http://192.168.0.25:3001': '/uptime.webp',
       'http://192.168.0.25:8082': '/tools.webp',
-      'https://web.stremio.com': '/stremio.png',
+      'https://web.stremio.com': '/stremio.webp',
     }
   } else {
     sites = {
@@ -74,7 +74,7 @@ export default async function Main({ searchParams }) {
       // 'https://money.codabool.com': '/money.webp',
       'https://uptime.codabool.com': '/uptime.webp',
       'https://tools.codabool.com': '/tools.webp',
-      'https://web.stremio.com': '/stremio.png',
+      'https://web.stremio.com': '/stremio.webp',
     }
   }
 
