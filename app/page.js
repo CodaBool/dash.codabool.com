@@ -33,7 +33,7 @@ export default async function Main({ searchParams }) {
       'http://192.168.0.25:8096': '/jellyfin.webp',
       'https://ssh.codabool.com': '/ssh.webp',
       'http://192.168.0.25:8085': '/rss.webp',
-      'http://192.168.0.25:8081': '/bin.webp',
+      'https://bin.codabool.com': '/bin.webp',
       'http://192.168.0.25:3080': '/librechat.webp',
       // 'http://192.168.0.25:7075': '/doc.webp',
       'http://192.168.0.25:30000': '/d20.webp',
