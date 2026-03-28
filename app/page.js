@@ -45,6 +45,7 @@ export default async function Main({ searchParams }) {
       // 'https://money.codabool.com': '/money.webp',
       'http://192.168.0.25:3001': '/uptime.webp',
       'http://192.168.0.25:8082': '/tools.webp',
+      'http://192.168.0.25:8384': '/sync.webp',
     }
   } else {
     sites = {
