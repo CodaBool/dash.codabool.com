@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dash-codabool",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    { "pattern": "dash.codabool.com", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

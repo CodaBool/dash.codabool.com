@@ -1,15 +1,12 @@
 {
-  "name": "codadash.com",
+  "name": "dash.codabool.com",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
-  "dependencies": {
-    "next": "16.1.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+  "devDependencies": {
+    "wrangler": "^4.156.2"
   }
 }
